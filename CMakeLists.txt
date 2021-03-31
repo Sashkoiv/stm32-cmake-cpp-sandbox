@@ -7,14 +7,14 @@ set(CMAKE_C_STANDARD 99)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_C_EXTENSIONS OFF)
 
-SET(CPU         "cortex-m4")
-set(FPU         "fpv4-sp-d16")
-set(FLOAT_ABI   "hard")
+SET(CPU                 "cortex-m4")
+set(FPU                 "fpv4-sp-d16")
+set(FLOAT_ABI           "hard")
 
-set(TOOLCHAIN_PATH  "/opt/gcc-arm-none-eabi-10-2020-q4-major/bin")
-set(CMAKE_ASM_COMPILER  ${TOOLCHAIN_PATH}/arm-none-eabi-gcc)
-set(CMAKE_C_COMPILER ${TOOLCHAIN_PATH}/arm-none-eabi-gcc)
-set(CMAKE_CXX_COMPILER ${TOOLCHAIN_PATH}/arm-none-eabi-g++)
+set(TOOLCHAIN_PATH      "/opt/gcc-arm-none-eabi-10-2020-q4-major/bin/arm-none-eabi-")
+set(CMAKE_ASM_COMPILER  ${TOOLCHAIN_PATH}gcc)
+set(CMAKE_C_COMPILER    ${TOOLCHAIN_PATH}gcc)
+set(CMAKE_CXX_COMPILER  ${TOOLCHAIN_PATH}g++)
 
 
 set(STM32CUBEMX_GENERATED_FILES
